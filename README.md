@@ -12,7 +12,7 @@ The cursors are fetched straight from SEGA's site at build time and are not redi
 ```nix
 # flake.nix
 inputs.pjsk-cursors = {
-  url = "github:MystiaFin/pjsk-cursors";
+  url = "github:MystiaFin/pjsk-cursors-flake";
   inputs.nixpkgs.follows = "nixpkgs";
 };
 
