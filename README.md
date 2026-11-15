@@ -1,4 +1,4 @@
-# pjsk-cursors
+# pjsk-cursors-flake
 
 ![Nix flake](https://img.shields.io/badge/Nix-flake-5277C3?logo=nixos&logoColor=white)
 ![Home Manager module](https://img.shields.io/badge/Home_Manager-module-5277C3?logo=nixos&logoColor=white)
