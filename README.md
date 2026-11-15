@@ -38,11 +38,11 @@ Add the same flake input, then install the theme system-wide:
 ```nix
 # configuration.nix
 environment.systemPackages = [
-  inputs.pjsk-cursors.packages.${pkgs.stdenv.hostPlatform.system}.asahina-mafuyu-animated
+  inputs.pjsk-cursors.packages.${pkgs.stdenv.hostPlatform.system}.hatsune-miku-virtual-singer-animated
 ];
 
 environment.variables = {
-  XCURSOR_THEME = "pjsk-asahina-mafuyu-animated";
+  XCURSOR_THEME = "pjsk-hatsune-miku-virtual-singer-animated";
   XCURSOR_SIZE = "32";
 };
 ```
@@ -54,16 +54,16 @@ Some desktops (GNOME, KDE) ignore `XCURSOR_THEME`; pick the theme in their curso
 Any distro with [Nix](https://nixos.org/download/) installed can build a theme and copy it into your icons folder:
 
 ```sh
-nix build github:MystiaFin/pjsk-cursors#asahina-mafuyu-animated
+nix build github:MystiaFin/pjsk-cursors#hatsune-miku-virtual-singer-animated
 mkdir -p ~/.local/share/icons
-cp -r --no-preserve=mode result/share/icons/pjsk-asahina-mafuyu-animated ~/.local/share/icons/
+cp -r --no-preserve=mode result/share/icons/pjsk-hatsune-miku-virtual-singer-animated ~/.local/share/icons/
 ```
 
-Then pick `pjsk-asahina-mafuyu-animated` in your desktop's cursor settings, or set it directly, for example:
+Then pick `pjsk-hatsune-miku-virtual-singer-animated` in your desktop's cursor settings, or set it directly, for example:
 
 ```sh
-gsettings set org.gnome.desktop.interface cursor-theme pjsk-asahina-mafuyu-animated  # GNOME
-hyprctl setcursor pjsk-asahina-mafuyu-animated 32                                    # Hyprland
+gsettings set org.gnome.desktop.interface cursor-theme pjsk-hatsune-miku-virtual-singer-animated  # GNOME
+hyprctl setcursor pjsk-hatsune-miku-virtual-singer-animated 32                                    # Hyprland
 ```
 
 The package is `<name>-animated` or `<name>-static`, and its theme is the same with a `pjsk-` prefix.
