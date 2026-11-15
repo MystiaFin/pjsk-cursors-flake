@@ -47,25 +47,7 @@ environment.variables = {
 
 Some desktops (GNOME, KDE) ignore `XCURSOR_THEME`; pick the theme in their cursor settings instead.
 
-## Other distros
-
-Any distro with [Nix](https://nixos.org/download/) installed can build a theme and copy it into your icons folder:
-
-```sh
-nix build github:MystiaFin/pjsk-cursors#hatsune-miku-virtual-singer-animated
-mkdir -p ~/.local/share/icons
-cp -r --no-preserve=mode result/share/icons/pjsk-hatsune-miku-virtual-singer-animated ~/.local/share/icons/
-```
-
-Then pick `pjsk-hatsune-miku-virtual-singer-animated` in your desktop's cursor settings, or set it directly, for example:
-
-```sh
-gsettings set org.gnome.desktop.interface cursor-theme pjsk-hatsune-miku-virtual-singer-animated  # GNOME
-hyprctl setcursor pjsk-hatsune-miku-virtual-singer-animated 32                                    # Hyprland
-```
-
 The package is `<name>-animated` or `<name>-static`, and its theme is the same with a `pjsk-` prefix.
-Building the default package (`nix build github:MystiaFin/pjsk-cursors`) gives you every theme at once.
 
 ## Characters
 
