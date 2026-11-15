@@ -29,7 +29,7 @@ pjsk-cursor = {
 
 This sets `home.pointerCursor`, so remove any other `home.pointerCursor` definition.
 
-## NixOS without Home Manager
+## Without Home Manager
 
 Add the same flake input, then install the theme system-wide:
 
